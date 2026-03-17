@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <h1>To-do list</h1>
+    <br>
+    <form onsubmit="addTask(); return false;">
+        <label for="taskInput">Task:</label><br>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <br><br>
+        <label for="dateInput">Due Date:</label><br>
+        <input type="date" id="dateInput">
+        <br><br>
+        <input type="submit" value="Add Task">
+    </form>
+    <ul id="taskList"></ul>
+
+    
+</body>
+</html>
